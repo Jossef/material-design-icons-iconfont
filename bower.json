@@ -15,13 +15,6 @@
     "google"
   ],
   "main": [
-    "dist/fonts/MaterialIcons-Regular.eot",
-    "dist/fonts/MaterialIcons-Regular.ttf",
-    "dist/fonts/MaterialIcons-Regular.woff",
-    "dist/fonts/MaterialIcons-Regular.woff2",
-    "dist/fonts/material-icons.css",
-    "dist/material-design-icons.css",
-    "dist/material-design-icons.css.map",
     "dist/material-design-icons.scss"
   ],
   "license": "CC-BY-4.0",
