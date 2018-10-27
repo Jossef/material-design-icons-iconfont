@@ -2,6 +2,9 @@
 ![banner-01](https://user-images.githubusercontent.com/1287098/47606030-f76c3680-da16-11e8-8508-92b26b68f3f8.png)
 
 
+[Project's Demo Page](https://jossef.github.io/material-design-icons-iconfont)
+
+
 ## MDI**DX** - Same Material Design icons, Better DX 
 
 
@@ -28,10 +31,8 @@ npm install material-design-icons-iconfont --save
 ```
 
 
-### Usage
 
-
-Visit the [Demo Page](https://jossef.github.io/material-design-icons-iconfont),
+### Usage - Check out the [Demo Page](https://jossef.github.io/material-design-icons-iconfont)
 
 
 - Using `bower`
