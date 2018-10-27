@@ -1,8 +1,8 @@
 {
   "name": "material-design-icons-iconfont",
-  "version": "3.0.3",
-  "author": "Material Design Authors",
-  "description": "Material Design icons by Google",
+  "version": "4.0.1",
+  "author": "Material Design Authors, Jossef Harush",
+  "description": "Material Design icons DX",
   "keywords": [
     "icons",
     "material",
@@ -14,15 +14,11 @@
     "material-design-icons-iconfont",
     "google"
   ],
-  "main":[
+  "main": [
     "dist/fonts/MaterialIcons-Regular.eot",
-    "dist/fonts/MaterialIcons-Regular.ijmap",
-    "dist/fonts/MaterialIcons-Regular.svg",
     "dist/fonts/MaterialIcons-Regular.ttf",
     "dist/fonts/MaterialIcons-Regular.woff",
     "dist/fonts/MaterialIcons-Regular.woff2",
-    "dist/fonts/codepoints",
-    "dist/fonts/iconjar-map.js",
     "dist/fonts/material-icons.css",
     "dist/material-design-icons.css",
     "dist/material-design-icons.css.map",

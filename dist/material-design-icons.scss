@@ -33,4 +33,6 @@ $MD-icon-path-name: $material-design-icons-font-path + 'MaterialIcons-Regular' !
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
+
+  font-display: block;
 }
