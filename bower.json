@@ -16,7 +16,7 @@
     "google"
   ],
   "main": [
-    "dist/material-design-icons.scss"
+    "src/material-design-icons.scss"
   ],
   "license": "CC-BY-4.0",
   "homepage": "http://google.com/design/spec"
