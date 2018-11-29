@@ -83,8 +83,8 @@ def main():
             file_name=file_name, extension=extension))
         download_file(url, file_path)
 
-    print_style()
+    update_scss_variables()
 
 
 if __name__ == '__main__':
-    update_scss_variables()
+    main()
