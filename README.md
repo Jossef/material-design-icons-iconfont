@@ -14,8 +14,7 @@ Sadly, Google allocates **low maintenance and low support** for issues reported 
 
 MDI**DX** helps modern **web developers** to use and include the (awesome) Material Design icons library in their project.
  
- 
- 
+
 
 ### Installation
 
@@ -48,8 +47,30 @@ npm install material-design-icons-iconfont --save
 
     Visit the [Demo Page](https://jossef.github.io/material-design-icons-iconfont) for the full icons list
 
+- Import fonts and fariabel in your project
  
- 
+  ```scss
+  $material-design-icons-font-path: '~material-design-icons-iconfont/dist/fonts/';
+
+  @import '~material-design-icons-iconfont/src/material-design-icons';
+  ```
+
+  **Customize your own classes**
+
+  access material variable with Sass mixins:
+
+  ```scss
+  .my-face {
+    @include material-icon('face');
+  }
+  # or
+  .my-face:before {
+    content: material-icons-content('face');
+  }
+  ```
+
+
+
 ### What's the difference? Why forking?
 
 
@@ -67,7 +88,34 @@ npm install material-design-icons-iconfont --save
 - **Maintenance** - The original repository's release has **missing icons** that should be included according to [https://material.io/tools/icons](https://material.io/tools/icons)
 
 
-
 ### [Demo Page](https://jossef.github.io/material-design-icons-iconfont)
 
 ![image](https://user-images.githubusercontent.com/1287098/47608007-44a8d200-da30-11e8-8750-694fb2fb26e4.png)
+
+### How to contribute to this project
+
+**Configure environment**
+
+```
+cd build
+pip install virtualenv
+
+# if you have multiple versions of python installed
+virtualenv -p python3 .venv
+# else..
+virtualenv .venv
+
+source .venv/bin/activate #(Mac, Linux) or source .venv/Scripts/activate (Win)
+pip install -r requirements.txt
+
+```
+
+**running build**
+
+1. The build folder whould be properly installed.
+2. Go to build folder and install dependencies:
+```
+cd backend
+source .venv/bin/activate #source .venv/Scripts/activate on Windows
+python build.py
+```

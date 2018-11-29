@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 $material-design-icons-font-path: './fonts/' !default;
 $MD-icon-path-name: $material-design-icons-font-path + 'MaterialIcons-Regular' !default;
 

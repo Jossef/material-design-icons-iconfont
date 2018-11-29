@@ -1,6 +1,7 @@
 import re
 import os
 import requests
+import csv
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 DIST_DIR = os.path.join(SCRIPT_DIR, '..', 'dist')
@@ -30,6 +31,23 @@ Mozilla/5.0 (Android 8.1.0; Mobile; rv:61.0) Gecko/61.0 Firefox/61.0
 """
 
 
+def update_scss_variables():
+    url = "https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints"
+    r = requests.get(url)
+    r.raise_for_status()
+    # df = pandas.read_csv(r.text)
+    # print(df)
+    csv_f = csv.reader(r.text.splitlines(), delimiter=' ')
+    variableFile = open("../src/_variables.scss", "w")
+    variableFile.write("$material-icons-codepoints: () !default;\n")
+    variableFile.write("$material-icons-codepoints: map-merge((\n")
+    for row in csv_f:
+        variableFile.write("	\"" + row[0] + "\": " + row[1] + ",\n")
+    variableFile.write("), $material-icons-codepoints);")
+
+    # print(r.text)
+
+
 def download_file(url, file_path):
     r = requests.get(url, headers={"user-agent": default_user_agent})
     r.raise_for_status()
@@ -49,20 +67,24 @@ def main():
 
         r = requests.get(url, headers={"user-agent": user_agent})
         r.raise_for_status()
-
-        urls = re.findall('url\((.*?)\)', r.content)
+        # print(r.text)
+        urls = re.findall('url\((.*?)\)', r.text)
         urls = map(str, urls)
         urls = filter(str, urls)
         font_urls.update(urls)
 
-    fonts_map = {font_url.split('.')[-1].lower(): font_url for font_url in font_urls}
+    fonts_map = {font_url.split(
+        '.')[-1].lower(): font_url for font_url in font_urls}
 
     file_name = 'MaterialIcons-Regular'
 
-    for extension, url in fonts_map.iteritems():
-        file_path = os.path.join(DIST_DIR, 'fonts', '{file_name}.{extension}'.format(file_name=file_name, extension=extension))
+    for extension, url in fonts_map.items():
+        file_path = os.path.join(DIST_DIR, 'fonts', '{file_name}.{extension}'.format(
+            file_name=file_name, extension=extension))
         download_file(url, file_path)
+
+    print_style()
 
 
 if __name__ == '__main__':
-    main()
+    update_scss_variables()
