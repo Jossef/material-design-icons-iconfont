@@ -1,0 +1,15 @@
+
+
+@function material-icons-content($codepoint) {
+  @return unquote('"\\#{$codepoint}"');
+}
+
+@mixin material-icon($name, $pseudo: 'before') {
+    $codepoint: map-get($material-icons-codepoints, $name);
+  
+    &:#{$pseudo} {
+      content: material-icons-content($codepoint);
+      font-family: 'Material Icons';
+    }
+  }
+  
