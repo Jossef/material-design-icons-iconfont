@@ -9,8 +9,8 @@ $MD-icon-path-name: $material-design-icons-font-path + 'MaterialIcons-Regular' !
   font-style: normal;
   font-weight: 400;
   src: url("#{$MD-icon-path-name}.eot"); /* For IE6-8 */
-  src: local("Material Icons"),
-       local("MaterialIcons-Regular"),
+  src: "Material Icons",
+       "MaterialIcons-Regular",
        url("#{$MD-icon-path-name}.woff2") format('woff2'),
        url("#{$MD-icon-path-name}.woff") format('woff'),
        url("#{$MD-icon-path-name}.ttf") format('truetype');
