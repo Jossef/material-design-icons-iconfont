@@ -1,10 +1,11 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: url("./fonts/MaterialIcons-Regular.eot");
   /* For IE6-8 */
-  src: "Material Icons", "MaterialIcons-Regular", url("./fonts/MaterialIcons-Regular.woff2") format("woff2"), url("./fonts/MaterialIcons-Regular.woff") format("woff"), url("./fonts/MaterialIcons-Regular.ttf") format("truetype"); }
+  src: local("☺"), url("./fonts/MaterialIcons-Regular.woff2") format("woff2"), url("./fonts/MaterialIcons-Regular.woff") format("woff"), url("./fonts/MaterialIcons-Regular.ttf") format("truetype"); }
 
 .material-icons {
   font-family: 'Material Icons';
