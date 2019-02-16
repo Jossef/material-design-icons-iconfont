@@ -1,6 +1,6 @@
 {
   "name": "material-design-icons-iconfont",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "author": "Material Design Authors, Jossef Harush",
   "description": "Material Design icons DX",
   "keywords": [
@@ -18,6 +18,6 @@
   "main": [
     "src/material-design-icons.scss"
   ],
-  "license": "CC-BY-4.0",
-  "homepage": "http://google.com/design/spec"
+  "license": "Apache-2.0",
+  "homepage": "https://jossef.github.io/material-design-icons-iconfont/"
 }
