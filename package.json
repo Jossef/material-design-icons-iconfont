@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/jossef/material-design-icons-iconfont"
   },
+  "scripts": {
+    "build": "node ./build/build.js"
+  },
   "keywords": [
     "icons",
     "material",
@@ -24,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/jossef/material-design-icons-iconfont/issues"
   },
-  "homepage": "https://jossef.github.io/material-design-icons-iconfont/"
+  "homepage": "https://jossef.github.io/material-design-icons-iconfont/",
+  "devDependencies": {
+    "fontkit": "^1.7.8",
+    "mkdirp": "^0.5.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
 }

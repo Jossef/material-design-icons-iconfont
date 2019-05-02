@@ -98,26 +98,11 @@ npm install material-design-icons-iconfont --save
 
 **Configure environment**
 
-```
-cd build
-pip install virtualenv
-
-# if you have multiple versions of python installed
-virtualenv -p python3 .venv
-# else..
-virtualenv .venv
-
-source .venv/bin/activate #(Mac, Linux) or source .venv/Scripts/activate (Win)
-pip install -r requirements.txt
-
-```
+Install nodejs on your environemt (> 7.6 for async await)
 
 **running build**
+```
+npm install
+npm run build
+```
 
-1. The build folder whould be properly installed.
-2. Go to build folder and install dependencies:
-```
-cd build
-source .venv/bin/activate #source .venv/Scripts/activate on Windows
-python build.py
-```
