@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 const {promisify} = require('util');
+const sass = require('node-sass');
 
 const request = require('request');
 const rp = require('request-promise-native');
@@ -102,7 +103,9 @@ function downloadFile(url, outputFilePath) {
     });
 }
 
-const outputDirPath = path.resolve(__dirname, '..', 'dist', 'fonts');
+
+const outputDirPath = path.resolve(__dirname, '..', 'dist');
+const outputFontsDirPath = path.resolve(outputDirPath, 'fonts');
 const srcDirPath = path.resolve(__dirname, '..', 'src');
 
 async function writeVariablesSCSSFile(outputFilePath, fontLigatures){
@@ -118,10 +121,27 @@ ${lines.join('\n')}
     await promisify(fs.writeFile)(outputFilePath, content);
 }
 
+async function buildScss(sourceScssFilePath, outputCssFilePath) {
+
+    console.log(`generating css file "${outputCssFilePath}" ...`);
+    let content = await promisify(sass.render)({
+        file: sourceScssFilePath,
+    });
+
+    await promisify(fs.writeFile)(outputCssFilePath, content.css);
+}
+
 async function main() {
 
-    if (!await promisify(fs.exists)(outputDirPath)) {
-        await promisify(mkdirp)(outputDirPath);
+
+    let sourceScssFilePath = path.resolve(srcDirPath, 'material-design-icons.scss');
+    let outputCssFilePath = path.resolve(outputDirPath, 'material-design-icons.css');
+
+    await buildScss(sourceScssFilePath, outputCssFilePath);
+    return;
+
+    if (!await promisify(fs.exists)(outputFontsDirPath)) {
+        await promisify(mkdirp)(outputFontsDirPath);
     }
 
     let url = 'https://fonts.googleapis.com/icon?family=Material+Icons';
@@ -149,22 +169,32 @@ async function main() {
     await Promise.all(Object.keys(fontsUrls).map(async extension => {
         let url = fontsUrls[extension];
 
-        let outputFilePath = path.resolve(outputDirPath, `${fontName}.${extension}`);
+        let outputFilePath = path.resolve(outputFontsDirPath, `${fontName}.${extension}`);
 
         console.log(`downloading "${outputFilePath}" ...`);
         await downloadFile(url, outputFilePath);
 
         if (extension === 'ttf') {
             let fontLigatures = await readFontLigatures(outputFilePath);
-            let ligaturesFilePath = path.resolve(outputDirPath, `${fontName}.json`);
+            let outputLigaturesJsonFilePath = path.resolve(outputFontsDirPath, `${fontName}.json`);
 
-            console.log(`extracted mapping to "${ligaturesFilePath}" ...`);
-            await promisify(fs.writeFile)(ligaturesFilePath, JSON.stringify(fontLigatures, null, 4));
+            console.log(`extracted mapping to "${outputLigaturesJsonFilePath}" ...`);
+            await promisify(fs.writeFile)(outputLigaturesJsonFilePath, JSON.stringify(fontLigatures, null, 4));
 
-            let scssVariablesFilePath = path.resolve(srcDirPath, '_variables.scss');
+            let outputVariablesScssFilePath = path.resolve(srcDirPath, '_variables.scss');
 
-            console.log(`generating codepoints to "${scssVariablesFilePath}" ...`);
-            await writeVariablesSCSSFile(scssVariablesFilePath, fontLigatures);
+            console.log(`generating codepoints to "${outputVariablesScssFilePath}" ...`);
+            await writeVariablesSCSSFile(outputVariablesScssFilePath, fontLigatures);
+
+
+            let sourceScssFilePath = path.resolve(srcDirPath, 'material-design-icons.scss');
+            let outputCssFilePath = path.resolve(outputDirPath, 'material-design-icons.css');
+
+            console.log(`generating css file "${cssFilePath}" ...`);
+            await promisify(sass.render)({
+                file: sourceScssFilePath,
+                outFile: outputCssFilePath
+            });
         }
     }));
 }
