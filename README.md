@@ -52,7 +52,7 @@ npm install material-design-icons-iconfont --save
   Import fonts and variables in your project
  
   ```scss
-  $material-design-icons-font-path: '~material-design-icons-iconfont/dist/fonts/';
+  $material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
 
   @import '~material-design-icons-iconfont/src/material-design-icons';
   ```
