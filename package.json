@@ -29,10 +29,10 @@
   },
   "homepage": "https://jossef.github.io/material-design-icons-iconfont/",
   "devDependencies": {
-    "fontkit": "^1.7.8",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.12.0",
-    "request": "^2.88.0",
-    "request-promise-native": "^1.0.7"
+    "fontkit": "^1.8.1",
+    "mkdirp": "^1.0.4",
+    "node-sass": "^4.14.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
   }
 }
