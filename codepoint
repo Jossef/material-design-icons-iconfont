@@ -70,7 +70,7 @@ add_circle e147
 add_circle_outline e148
 add_comment e266
 add e145
-add_g_drive e65c
+add_to_drive e65c
 add_ic_call e97c
 add_link e178
 add_location_alt ef3a
