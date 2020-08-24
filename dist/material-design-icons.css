@@ -173,8 +173,6 @@
     content: "\e266"; }
   .material-icons.add:before {
     content: "\e145"; }
-  .material-icons.add_to_drive:before {
-    content: "\e65c"; }
   .material-icons.add_ic_call:before {
     content: "\e97c"; }
   .material-icons.add_link:before {
@@ -193,6 +191,8 @@
     content: "\e854"; }
   .material-icons.add_task:before {
     content: "\f23a"; }
+  .material-icons.add_to_drive:before {
+    content: "\e65c"; }
   .material-icons.add_to_home_screen:before {
     content: "\e1fe"; }
   .material-icons.add_to_photos:before {
@@ -245,6 +245,18 @@
     content: "\e858"; }
   .material-icons.album:before {
     content: "\e019"; }
+  .material-icons.align_horizontal_center:before {
+    content: "\e00f"; }
+  .material-icons.align_horizontal_left:before {
+    content: "\e00d"; }
+  .material-icons.align_horizontal_right:before {
+    content: "\e010"; }
+  .material-icons.align_vertical_bottom:before {
+    content: "\e015"; }
+  .material-icons.align_vertical_center:before {
+    content: "\e011"; }
+  .material-icons.align_vertical_top:before {
+    content: "\e00c"; }
   .material-icons.all_inbox:before {
     content: "\e97f"; }
   .material-icons.all_inclusive:before {
@@ -1387,6 +1399,8 @@
     content: "\f100"; }
   .material-icons.home_work:before {
     content: "\ea09"; }
+  .material-icons.horizontal_distribute:before {
+    content: "\e014"; }
   .material-icons.horizontal_rule:before {
     content: "\f108"; }
   .material-icons.horizontal_split:before {
@@ -2249,6 +2263,8 @@
     content: "\f232"; }
   .material-icons.push_pin:before {
     content: "\f10d"; }
+  .material-icons.qr_code_2:before {
+    content: "\e00a"; }
   .material-icons.qr_code:before {
     content: "\ef6b"; }
   .material-icons.qr_code_scanner:before {
@@ -2945,6 +2961,8 @@
     content: "\f236"; }
   .material-icons.unsubscribe:before {
     content: "\e0eb"; }
+  .material-icons.update_disabled:before {
+    content: "\e075"; }
   .material-icons.update:before {
     content: "\e923"; }
   .material-icons.upgrade:before {
@@ -2963,6 +2981,8 @@
     content: "\e259"; }
   .material-icons.vertical_align_top:before {
     content: "\e25a"; }
+  .material-icons.vertical_distribute:before {
+    content: "\e076"; }
   .material-icons.vertical_split:before {
     content: "\e949"; }
   .material-icons.vibration:before {
