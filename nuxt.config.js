@@ -3,15 +3,15 @@ export default {
     base: '/material-design-icons-iconfont/'
   },
   dir: {
-    assets: 'docs/assets',
-    app: 'docs/app',
-    layouts: 'docs/layouts',
-    middleware: 'docs/middleware',
-    pages: 'docs/pages',
-    static: 'docs/static',
-    store: 'docs/store'
+    assets: 'src/docs/assets',
+    app: 'src/docs/app',
+    layouts: 'src/docs/layouts',
+    middleware: 'src/docs/middleware',
+    pages: 'src/docs/pages',
+    static: 'src/docs/static',
+    store: 'src/docs/store'
   },
   generate: {
-    dir: 'dist/docs'
+    dir: 'docs'
   }
 }
