@@ -1,9 +1,8 @@
-name: CI
+name: Check for Font Updates
 
 on:
   schedule:
     - cron: "*/5 * * * *"
-    # - cron: "0 0 * * *"
 
 jobs:
   build:
@@ -15,4 +14,9 @@ jobs:
           node-version: '12'
       - run: npm install
       - run: npm run check-for-font-updates
-      - run: echo "an update is available TODO - push a commit with changes"
+      - uses: EndBug/add-and-commit@v4
+        with:
+          add: '.'
+          message: 'feat(font): auto-update font from remote cdn'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
