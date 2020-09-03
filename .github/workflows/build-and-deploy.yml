@@ -42,7 +42,7 @@ jobs:
 
       - name: Build font and docs
         run: |
-          npm ci --only=prod
+          npm ci
           npm run build
           npm run docs-build
 
