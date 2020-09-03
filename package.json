@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "node ./build/build.js",
+    "check-for-font-updates": "node ./build/check-for-font-updates.js",
     "docs-build": "nuxt generate --config-file nuxt.config.js",
     "docs-dev": "nuxt --config-file nuxt.config.js --hostname 0.0.0.0 --port 3000"
   },
