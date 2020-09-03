@@ -56,7 +56,7 @@
             <div class="icons-gallery-content-info">
                 <div class="icons-gallery-content-info-header">getting started</div>
                 <div class="icons-gallery-content-info-getting-started">
-                    Install using npm or bower
+                    Install using npm
                     <div class="icons-gallery-content-info-getting-started-code-snippet">npm install material-design-icons-iconfont</div>
 
                     Include or @import the precompiled css file

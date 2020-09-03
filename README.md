@@ -18,34 +18,14 @@ MDI**DX** helps modern **web developers** to use and include the (awesome) Mater
 
 ### Installation
 
-
-using bower 
-```
-bower install material-design-icons-iconfont --save
-```
-
 using npm
 ```
 npm install material-design-icons-iconfont --save
 ```
 
 
-
 ### Usage - Check out the [Demo Page](https://jossef.github.io/material-design-icons-iconfont)
 
-
-- Using `bower`
- 
-    bower IMO is the simplest way to use this project        
-    Add this inside your `<head>` 
-
-      <link href="bower_components/material-design-icons-iconfont/dist/material-design-icons.css" rel="stylesheet">
-    
-    Later on, reference your desired icon `<i class="material-icons">` + icon-id + `</i>`. For instance:
-
-      <i class="material-icons">contact_support</i>
-
-    Visit the [Demo Page](https://jossef.github.io/material-design-icons-iconfont) for the full icons list
 
 - Using `scss`
 
