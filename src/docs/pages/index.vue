@@ -158,12 +158,12 @@
                 name = name.replace(/_/, " ");
                 return name.charAt(0).toUpperCase() + name.substr(1).toLowerCase();
             },
-            normalizeCssClassName(name){
-              if (/^\d.*/.test(name)){
-                  return `_${name}`;
-              }
+            normalizeCssClassName(name) {
+                if (/^\d.*/.test(name)) {
+                    return `_${name}`;
+                }
 
-              return name;
+                return name;
             },
             isNotFiltered(iconId) {
                 return vm.filter ? iconId.indexOf(vm.filter.trim()) >= 0 : true;
@@ -184,9 +184,9 @@
             isAnyIconSelected() {
                 return vm.selectedIconsCount;
             },
-            clear(){
-              vm.selectedIcons = {};
-              vm.selectedIconsCount=0;
+            clear() {
+                vm.selectedIcons = {};
+                vm.selectedIconsCount = 0;
             }
         }
     };
@@ -366,6 +366,7 @@
                 top: $header-height - $input-height/2;
                 right: $info-menu-width + $padding;
                 z-index: 2;
+
                 &-input {
                     @include input($input-height);
 
@@ -437,6 +438,7 @@
                             &-active {
                                 box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
                             }
+
                             &-disabled {
                                 opacity: 0.4;
                             }
@@ -527,11 +529,11 @@
                     flex-direction: row;
                     align-items: center;
 
-                    &-text{
+                    &-text {
                         flex-grow: 999;
                     }
 
-                    &-button{
+                    &-button {
                         user-select: none;
                         cursor: pointer;
 
@@ -543,15 +545,15 @@
                         box-shadow: 0 0 0 1px #bdbdbd;
                         opacity: 0.8;
 
-                        &:hover{
+                        &:hover {
                             opacity: 1;
                         }
 
-                        i{
+                        i {
                             font-size: 14px;
                         }
 
-                        &-active{
+                        &-active {
                             background: #eeed9e;
 
                         }
@@ -564,6 +566,7 @@
 
                 &-selected-icons {
                     margin-bottom: 10px;
+
                     &-item {
                         @include card();
 

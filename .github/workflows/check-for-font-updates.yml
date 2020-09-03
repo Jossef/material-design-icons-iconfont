@@ -2,7 +2,7 @@ name: Check for Font Updates
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   build:
