@@ -245,5 +245,6 @@ async function updateAndBuild() {
 
 module.exports.updateAndBuild = updateAndBuild;
 module.exports.calculateDirHash = calculateDirHash;
+module.exports.calculateFileHash = calculateFileHash;
 module.exports.DIST_DIR_PATH = DIST_DIR_PATH;
 module.exports.SRC_DIR_PATH = SRC_DIR_PATH;

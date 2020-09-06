@@ -3,12 +3,16 @@ name: Check for Font Updates
 on:
   schedule:
     - cron: "0 0 * * *"
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+        env:
+          GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
@@ -19,4 +23,5 @@ jobs:
           add: '.'
           message: 'feat(font): auto-update font from remote cdn'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+
