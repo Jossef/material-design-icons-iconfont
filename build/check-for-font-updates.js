@@ -3,15 +3,15 @@ const path = require('path');
 
 async function main() {
     let fontJsonFilePath = path.join(common.DIST_DIR_PATH, 'fonts', 'MaterialIcons-Regular.json');
-    let hashPreUpdate = await common.calculateFileHash(fontJsonFilePath).hash;
+    let hashPreUpdate = await common.calculateFileHash(fontJsonFilePath);
     await common.updateAndBuild();
-    let hashPostUpdate = await common.calculateFileHash(fontJsonFilePath).hash;
+    let hashPostUpdate = await common.calculateFileHash(fontJsonFilePath);
 
-    let requireUpdate = hashPreUpdate !== hashPostUpdate;
+    let requireUpdate = hashPreUpdate.hash !== hashPostUpdate.hash;
     if (!requireUpdate) {
         throw new Error("nothing to update")
     }
-    console.log(`an update is required ${hashPreUpdate} != ${hashPostUpdate}`);
+    console.log(`an update is required ${hashPreUpdate.hash} != ${hashPostUpdate.hash}`);
 }
 
 
