@@ -9,6 +9,7 @@ async function main() {
 
     let requireUpdate = hashPreUpdate.hash !== hashPostUpdate.hash;
     if (!requireUpdate) {
+        console.log(`No update is required ${hashPreUpdate.hash} != ${hashPostUpdate.hash} == ${hashPreUpdate.hash !== hashPostUpdate.hash}`);
         throw new Error("nothing to update")
     }
     console.log(`an update is required ${hashPreUpdate.hash} != ${hashPostUpdate.hash}`);
