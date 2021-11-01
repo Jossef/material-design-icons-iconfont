@@ -1,7 +1,7 @@
 {
   "name": "material-design-icons-iconfont",
-  "version": "v6.1.2",
-  "description": "Material Design icons DX",
+  "version": "v6.1.0",
+  "description": "Material Design Icons DX",
   "main": "dist/material-design-icons.css",
   "repository": {
     "type": "git",
