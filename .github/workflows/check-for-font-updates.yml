@@ -12,10 +12,12 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
         env:
-          GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
+          
       - run: npm install
       - run: npm run check-for-font-updates
       - uses: EndBug/add-and-commit@v4
@@ -23,5 +25,5 @@ jobs:
           add: '.'
           message: 'feat(font): auto-update font from remote cdn'
         env:
-          GITHUB_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
