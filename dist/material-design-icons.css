@@ -621,6 +621,8 @@
     content: "\e1ae"; }
   .material-icons.broken_image:before {
     content: "\e3ad"; }
+  .material-icons.browse_gallery:before {
+    content: "\ebd1"; }
   .material-icons.browser_not_supported:before {
     content: "\ef47"; }
   .material-icons.browser_updated:before {
@@ -657,6 +659,8 @@
     content: "\e7e9"; }
   .material-icons.calculate:before {
     content: "\ea5f"; }
+  .material-icons.calendar_month:before {
+    content: "\ebcc"; }
   .material-icons.calendar_today:before {
     content: "\e935"; }
   .material-icons.calendar_view_day:before {
@@ -977,6 +981,8 @@
     content: "\e799"; }
   .material-icons.css:before {
     content: "\eb93"; }
+  .material-icons.currency_bitcoin:before {
+    content: "\ebc5"; }
   .material-icons.currency_exchange:before {
     content: "\eb70"; }
   .material-icons.currency_franc:before {
@@ -1131,6 +1137,8 @@
     content: "\e610"; }
   .material-icons.discord:before {
     content: "\ea6c"; }
+  .material-icons.discount:before {
+    content: "\ebc9"; }
   .material-icons.display_settings:before {
     content: "\eb97"; }
   .material-icons.dnd_forwardslash:before {
@@ -1565,6 +1573,8 @@
     content: "\e818"; }
   .material-icons.folder:before {
     content: "\e2c7"; }
+  .material-icons.folder_copy:before {
+    content: "\ebbd"; }
   .material-icons.folder_delete:before {
     content: "\eb34"; }
   .material-icons.folder_off:before {
@@ -1755,6 +1765,8 @@
     content: "\f019"; }
   .material-icons.hail:before {
     content: "\e9b1"; }
+  .material-icons.handshake:before {
+    content: "\ebcb"; }
   .material-icons.handyman:before {
     content: "\f10b"; }
   .material-icons.hardware:before {
@@ -2487,6 +2499,8 @@
     content: "\e640"; }
   .material-icons.network_locked:before {
     content: "\e61a"; }
+  .material-icons.network_ping:before {
+    content: "\ebca"; }
   .material-icons.network_wifi:before {
     content: "\e1ba"; }
   .material-icons.new_label:before {
@@ -2627,6 +2641,8 @@
     content: "\f1d4"; }
   .material-icons.outlined_flag:before {
     content: "\e16e"; }
+  .material-icons.output:before {
+    content: "\ebbe"; }
   .material-icons.padding:before {
     content: "\e9c8"; }
   .material-icons.pages:before {
@@ -3115,6 +3131,8 @@
     content: "\eba5"; }
   .material-icons.rocket_launch:before {
     content: "\eb9b"; }
+  .material-icons.roller_skating:before {
+    content: "\ebcd"; }
   .material-icons.roofing:before {
     content: "\f201"; }
   .material-icons.room:before {
@@ -3197,6 +3215,8 @@
     content: "\ea4b"; }
   .material-icons.score:before {
     content: "\e269"; }
+  .material-icons.scoreboard:before {
+    content: "\ebd0"; }
   .material-icons.screen_lock_landscape:before {
     content: "\e1be"; }
   .material-icons.screen_lock_portrait:before {
@@ -3211,6 +3231,8 @@
     content: "\e0e2"; }
   .material-icons.screenshot:before {
     content: "\f056"; }
+  .material-icons.scuba_diving:before {
+    content: "\ebce"; }
   .material-icons.sd:before {
     content: "\e9dd"; }
   .material-icons.sd_card:before {
@@ -3505,6 +3527,8 @@
     content: "\ea29"; }
   .material-icons.sports_golf:before {
     content: "\ea2a"; }
+  .material-icons.sports_gymnastics:before {
+    content: "\ebc4"; }
   .material-icons.sports_handball:before {
     content: "\ea33"; }
   .material-icons.sports_hockey:before {
@@ -3821,6 +3845,8 @@
     content: "\e426"; }
   .material-icons.tips_and_updates:before {
     content: "\e79a"; }
+  .material-icons.tire_repair:before {
+    content: "\ebc8"; }
   .material-icons.title:before {
     content: "\e264"; }
   .material-icons.toc:before {
@@ -3941,6 +3967,10 @@
     content: "\e4fa"; }
   .material-icons.vaccines:before {
     content: "\e138"; }
+  .material-icons.vape_free:before {
+    content: "\ebc6"; }
+  .material-icons.vaping_rooms:before {
+    content: "\ebcf"; }
   .material-icons.verified:before {
     content: "\ef76"; }
   .material-icons.verified_user:before {
