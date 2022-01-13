@@ -2145,6 +2145,8 @@
     content: "\e518"; }
   .material-icons.lightbulb:before {
     content: "\e0f0"; }
+  .material-icons.lightbulb_circle:before {
+    content: "\ebfe"; }
   .material-icons.lightbulb_outline:before {
     content: "\e90f"; }
   .material-icons.line_axis:before {
@@ -2657,6 +2659,8 @@
     content: "\e90a"; }
   .material-icons.offline_share:before {
     content: "\e9c5"; }
+  .material-icons.on_device_training:before {
+    content: "\ebfd"; }
   .material-icons.ondemand_video:before {
     content: "\e63a"; }
   .material-icons.online_prediction:before {
@@ -3117,6 +3121,8 @@
     content: "\e9d4"; }
   .material-icons.remove_red_eye:before {
     content: "\e417"; }
+  .material-icons.remove_road:before {
+    content: "\ebfc"; }
   .material-icons.remove_shopping_cart:before {
     content: "\e928"; }
   .material-icons.reorder:before {
