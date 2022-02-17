@@ -447,6 +447,8 @@
     content: "\e665"; }
   .material-icons.auto_graph:before {
     content: "\e4fb"; }
+  .material-icons.auto_mode:before {
+    content: "\ec20"; }
   .material-icons.auto_stories:before {
     content: "\e666"; }
   .material-icons.autofps_select:before {
@@ -535,6 +537,10 @@
     content: "\ea3a"; }
   .material-icons.blender:before {
     content: "\efe3"; }
+  .material-icons.blinds:before {
+    content: "\e286"; }
+  .material-icons.blinds_closed:before {
+    content: "\ec1f"; }
   .material-icons.block:before {
     content: "\e14b"; }
   .material-icons.block_flipped:before {
@@ -1017,6 +1023,10 @@
     content: "\eafb"; }
   .material-icons.currency_yuan:before {
     content: "\eaf9"; }
+  .material-icons.curtains:before {
+    content: "\ec1e"; }
+  .material-icons.curtains_closed:before {
+    content: "\ec1d"; }
   .material-icons.cyclone:before {
     content: "\ebd5"; }
   .material-icons.dangerous:before {
@@ -1307,8 +1317,12 @@
     content: "\eb69"; }
   .material-icons.electric_bike:before {
     content: "\eb1b"; }
+  .material-icons.electric_bolt:before {
+    content: "\ec1c"; }
   .material-icons.electric_car:before {
     content: "\eb1c"; }
+  .material-icons.electric_meter:before {
+    content: "\ec1b"; }
   .material-icons.electric_moped:before {
     content: "\eb1d"; }
   .material-icons.electric_rickshaw:before {
@@ -1345,6 +1359,8 @@
     content: "\ea1e"; }
   .material-icons.emoji_transportation:before {
     content: "\ea1f"; }
+  .material-icons.energy_savings_leaf:before {
+    content: "\ec1a"; }
   .material-icons.engineering:before {
     content: "\ea3d"; }
   .material-icons.enhance_photo_translate:before {
@@ -1719,6 +1735,8 @@
     content: "\e021"; }
   .material-icons.garage:before {
     content: "\f011"; }
+  .material-icons.gas_meter:before {
+    content: "\ec19"; }
   .material-icons.gavel:before {
     content: "\e90e"; }
   .material-icons.generating_tokens:before {
@@ -1841,6 +1859,8 @@
     content: "\f104"; }
   .material-icons.heart_broken:before {
     content: "\eac2"; }
+  .material-icons.heat_pump:before {
+    content: "\ec18"; }
   .material-icons.height:before {
     content: "\ea16"; }
   .material-icons.help:before {
@@ -2303,8 +2323,12 @@
     content: "\f235"; }
   .material-icons.lunch_dining:before {
     content: "\ea61"; }
+  .material-icons.lyrics:before {
+    content: "\ec0b"; }
   .material-icons.mail:before {
     content: "\e158"; }
+  .material-icons.mail_lock:before {
+    content: "\ec0a"; }
   .material-icons.mail_outline:before {
     content: "\e0e1"; }
   .material-icons.male:before {
@@ -2419,6 +2443,8 @@
     content: "\e254"; }
   .material-icons.mode_edit_outline:before {
     content: "\f035"; }
+  .material-icons.mode_fan_off:before {
+    content: "\ec17"; }
   .material-icons.mode_night:before {
     content: "\f036"; }
   .material-icons.mode_of_travel:before {
@@ -2531,6 +2557,8 @@
     content: "\f03b"; }
   .material-icons.nearby_off:before {
     content: "\f03c"; }
+  .material-icons.nest_cam_wired_stand:before {
+    content: "\ec16"; }
   .material-icons.network_cell:before {
     content: "\e1b9"; }
   .material-icons.network_check:before {
@@ -2659,6 +2687,8 @@
     content: "\e90a"; }
   .material-icons.offline_share:before {
     content: "\e9c5"; }
+  .material-icons.oil_barrel:before {
+    content: "\ec15"; }
   .material-icons.on_device_training:before {
     content: "\ebfd"; }
   .material-icons.ondemand_video:before {
@@ -3005,6 +3035,10 @@
     content: "\e744"; }
   .material-icons.production_quantity_limits:before {
     content: "\e1d1"; }
+  .material-icons.propane:before {
+    content: "\ec14"; }
+  .material-icons.propane_tank:before {
+    content: "\ec13"; }
   .material-icons.psychology:before {
     content: "\ea4a"; }
   .material-icons.public:before {
@@ -3185,6 +3219,10 @@
     content: "\eba5"; }
   .material-icons.rocket_launch:before {
     content: "\eb9b"; }
+  .material-icons.roller_shades:before {
+    content: "\ec12"; }
+  .material-icons.roller_shades_closed:before {
+    content: "\ec11"; }
   .material-icons.roller_skating:before {
     content: "\ebcd"; }
   .material-icons.roofing:before {
@@ -3289,6 +3327,8 @@
     content: "\e0e2"; }
   .material-icons.screenshot:before {
     content: "\f056"; }
+  .material-icons.screenshot_monitor:before {
+    content: "\ec08"; }
   .material-icons.scuba_diving:before {
     content: "\ebce"; }
   .material-icons.sd:before {
@@ -3329,6 +3369,8 @@
     content: "\f05c"; }
   .material-icons.sensor_door:before {
     content: "\f1b5"; }
+  .material-icons.sensor_occupied:before {
+    content: "\ec10"; }
   .material-icons.sensor_window:before {
     content: "\f1b4"; }
   .material-icons.sensors:before {
@@ -3537,6 +3579,8 @@
     content: "\f1b2"; }
   .material-icons.social_distance:before {
     content: "\e1cb"; }
+  .material-icons.solar_power:before {
+    content: "\ec0f"; }
   .material-icons.sort:before {
     content: "\e164"; }
   .material-icons.sort_by_alpha:before {
@@ -3941,6 +3985,8 @@
     content: "\e427"; }
   .material-icons.topic:before {
     content: "\f1c8"; }
+  .material-icons.tornado:before {
+    content: "\e199"; }
   .material-icons.touch_app:before {
     content: "\e913"; }
   .material-icons.tour:before {
@@ -3977,6 +4023,8 @@
     content: "\e8e5"; }
   .material-icons.trip_origin:before {
     content: "\e57b"; }
+  .material-icons.troubleshoot:before {
+    content: "\e1d2"; }
   .material-icons.try:before {
     content: "\f07c"; }
   .material-icons.tsunami:before {
@@ -4061,6 +4109,10 @@
     content: "\e25a"; }
   .material-icons.vertical_distribute:before {
     content: "\e076"; }
+  .material-icons.vertical_shades:before {
+    content: "\ec0e"; }
+  .material-icons.vertical_shades_closed:before {
+    content: "\ec0d"; }
   .material-icons.vertical_split:before {
     content: "\e949"; }
   .material-icons.vibration:before {
@@ -4277,6 +4329,8 @@
     content: "\f086"; }
   .material-icons.wifi_tethering_off:before {
     content: "\f087"; }
+  .material-icons.wind_power:before {
+    content: "\ec0c"; }
   .material-icons.window:before {
     content: "\f088"; }
   .material-icons.wine_bar:before {
@@ -4289,6 +4343,8 @@
     content: "\ea9f"; }
   .material-icons.work:before {
     content: "\e8f9"; }
+  .material-icons.work_history:before {
+    content: "\ec09"; }
   .material-icons.work_off:before {
     content: "\e942"; }
   .material-icons.work_outline:before {
