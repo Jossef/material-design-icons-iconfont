@@ -127,14 +127,23 @@ ${lines.join('\n')}
     await promisify(fs.writeFile)(outputFilePath, content);
 }
 
-async function buildScss(sourceScssFilePath, outputCssFilePath) {
+async function buildScss(sourceScssFilePath, outputCssFilePath, minify) {
 
     console.log(`generating css file "${outputCssFilePath}" ...`);
-    let content = await promisify(sass.render)({
+    let options = {
         file: sourceScssFilePath,
-    });
+        outFile: outputCssFilePath,
+        sourceMap: true,
+    };
+
+    if (minify){
+        options['outputStyle'] = 'compressed'
+    }
+
+    let content = await promisify(sass.render)(options);
 
     await promisify(fs.writeFile)(outputCssFilePath, content.css);
+    await promisify(fs.writeFile)(`${outputCssFilePath}.map`, content.map);
 }
 
 function calculateFileHash(filePath) {
@@ -237,8 +246,10 @@ async function updateAndBuild() {
 
             let sourceScssFilePath = path.resolve(SRC_DIR_PATH, 'material-design-icons.scss');
             let outputCssFilePath = path.resolve(DIST_DIR_PATH, 'material-design-icons.css');
-
             await buildScss(sourceScssFilePath, outputCssFilePath);
+
+            let outputMinifiedCssFilePath = path.resolve(DIST_DIR_PATH, 'material-design-icons.min.css');
+            await buildScss(sourceScssFilePath, outputMinifiedCssFilePath, true);
         }
     }));
 }
