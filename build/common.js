@@ -250,6 +250,13 @@ async function updateAndBuild() {
 
             let outputMinifiedCssFilePath = path.resolve(DIST_DIR_PATH, 'material-design-icons.min.css');
             await buildScss(sourceScssFilePath, outputMinifiedCssFilePath, true);
+
+            let sourceScssNoCodepointsFilePath = path.resolve(SRC_DIR_PATH, 'material-design-icons-no-codepoints.scss');
+            let outputCssNoCodepointsFilePath = path.resolve(DIST_DIR_PATH, 'material-design-icons-no-codepoints.css');
+            await buildScss(sourceScssNoCodepointsFilePath, outputCssNoCodepointsFilePath);
+
+            let outputMinifiedNoCodepointsCssFilePath = path.resolve(DIST_DIR_PATH, 'material-design-icons-no-codepoints.min.css');
+            await buildScss(sourceScssNoCodepointsFilePath, outputMinifiedNoCodepointsCssFilePath, true);
         }
     }));
 }
