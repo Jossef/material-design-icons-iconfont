@@ -52,7 +52,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -m "docs(): bumping release ${{ steps.semantic_release_info.outputs.version }}"
-          git tag ${{ steps.semantic_release_info.outputs.version }}
+          git tag ${{ steps.semantic_release_info.outputs.git_tag }}
 
       - name: Push changes
         if: ${{ steps.semantic_release_info.outputs.version }}
@@ -67,8 +67,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         with:
-          tag_name: ${{ steps.semantic_release_info.outputs.version }}
-          release_name: ${{ steps.semantic_release_info.outputs.version }}
+          tag_name: ${{ steps.semantic_release_info.outputs.git_tag }}
+          release_name: ${{ steps.semantic_release_info.outputs.git_tag }}
           body: ${{ steps.semantic_release_info.outputs.notes }}
           draft: false
           prerelease: false
