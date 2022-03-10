@@ -50,6 +50,8 @@
     content: "\e958"; }
   .material-icons._17mp:before {
     content: "\e959"; }
+  .material-icons._18_up_rating:before {
+    content: "\f8fd"; }
   .material-icons._18mp:before {
     content: "\e95a"; }
   .material-icons._19mp:before {
@@ -640,6 +642,10 @@
     content: "\e1ad"; }
   .material-icons.brightness_medium:before {
     content: "\e1ae"; }
+  .material-icons.broadcast_on_home:before {
+    content: "\f8f8"; }
+  .material-icons.broadcast_on_personal:before {
+    content: "\f8f9"; }
   .material-icons.broken_image:before {
     content: "\e3ad"; }
   .material-icons.browse_gallery:before {
@@ -1084,6 +1090,8 @@
     content: "\ebb6"; }
   .material-icons.design_services:before {
     content: "\f10a"; }
+  .material-icons.desk:before {
+    content: "\f8f4"; }
   .material-icons.desktop_access_disabled:before {
     content: "\e99d"; }
   .material-icons.desktop_mac:before {
@@ -2286,6 +2294,8 @@
     content: "\e898"; }
   .material-icons.lock_outline:before {
     content: "\e899"; }
+  .material-icons.lock_person:before {
+    content: "\f8f3"; }
   .material-icons.lock_reset:before {
     content: "\eade"; }
   .material-icons.login:before {
@@ -2600,6 +2610,8 @@
     content: "\ea46"; }
   .material-icons.no_accounts:before {
     content: "\f03e"; }
+  .material-icons.no_adult_content:before {
+    content: "\f8fe"; }
   .material-icons.no_backpack:before {
     content: "\f237"; }
   .material-icons.no_cell:before {
@@ -4222,6 +4234,8 @@
     content: "\e62f"; }
   .material-icons.vrpano:before {
     content: "\f082"; }
+  .material-icons.wallet:before {
+    content: "\f8ff"; }
   .material-icons.wallet_giftcard:before {
     content: "\e8f6"; }
   .material-icons.wallet_membership:before {
@@ -4300,6 +4314,12 @@
     content: "\e177"; }
   .material-icons.widgets:before {
     content: "\e1bd"; }
+  .material-icons.width_full:before {
+    content: "\f8f5"; }
+  .material-icons.width_normal:before {
+    content: "\f8f6"; }
+  .material-icons.width_wide:before {
+    content: "\f8f7"; }
   .material-icons.wifi:before {
     content: "\e63e"; }
   .material-icons.wifi_1_bar:before {
