@@ -24,7 +24,8 @@
     "material-design-icons-dist",
     "material-design-icons-iconfont",
     "mdidx",
-    "google"
+    "google",
+    "nuxt"
   ],
   "author": "Material Design Authors, Jossef Harush",
   "license": "Apache-2.0",
