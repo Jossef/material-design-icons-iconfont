@@ -202,6 +202,10 @@
     content: "\e148"; }
   .material-icons.add_comment:before {
     content: "\e266"; }
+  .material-icons.add_home:before {
+    content: "\f8eb"; }
+  .material-icons.add_home_work:before {
+    content: "\f8ed"; }
   .material-icons.add_ic_call:before {
     content: "\e97c"; }
   .material-icons.add_link:before {
@@ -1058,6 +1062,10 @@
     content: "\eb9f"; }
   .material-icons.data_usage:before {
     content: "\e1af"; }
+  .material-icons.dataset:before {
+    content: "\f8ee"; }
+  .material-icons.dataset_linked:before {
+    content: "\f8ef"; }
   .material-icons.date_range:before {
     content: "\e916"; }
   .material-icons.deblur:before {
@@ -1564,6 +1572,10 @@
     content: "\f1d8"; }
   .material-icons.fire_hydrant:before {
     content: "\f1a3"; }
+  .material-icons.fire_hydrant_alt:before {
+    content: "\f8f1"; }
+  .material-icons.fire_truck:before {
+    content: "\f8f2"; }
   .material-icons.fireplace:before {
     content: "\ea43"; }
   .material-icons.first_page:before {
@@ -3054,6 +3066,8 @@
     content: "\ec13"; }
   .material-icons.psychology:before {
     content: "\ea4a"; }
+  .material-icons.psychology_alt:before {
+    content: "\f8ea"; }
   .material-icons.public:before {
     content: "\e80b"; }
   .material-icons.public_off:before {
@@ -3174,6 +3188,8 @@
     content: "\e928"; }
   .material-icons.reorder:before {
     content: "\e8fe"; }
+  .material-icons.repartition:before {
+    content: "\f8e8"; }
   .material-icons.repeat:before {
     content: "\e040"; }
   .material-icons.repeat_on:before {
@@ -4014,6 +4030,8 @@
     content: "\e570"; }
   .material-icons.tram:before {
     content: "\e571"; }
+  .material-icons.transcribe:before {
+    content: "\f8ec"; }
   .material-icons.transfer_within_a_station:before {
     content: "\e572"; }
   .material-icons.transform:before {
@@ -4070,6 +4088,8 @@
     content: "\e647"; }
   .material-icons.two_wheeler:before {
     content: "\e9f9"; }
+  .material-icons.type_specimen:before {
+    content: "\f8f0"; }
   .material-icons.u_turn_left:before {
     content: "\eba1"; }
   .material-icons.u_turn_right:before {
