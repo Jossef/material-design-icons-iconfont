@@ -19,11 +19,23 @@ jobs:
           node-version: '12'
           
       - run: npm install
-      - run: npm run check-for-font-updates
-      - uses: EndBug/add-and-commit@v4
-        with:
-          add: '.'
-          message: 'feat(font): auto-update font from remote cdn'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+	  
+      - name: Check for font updates
+        id: updates
+        run: npm run check-for-font-updates && echo ::set-output name=valid::1 || true
+        
+      - name: Get Timestamp
+        if: ${{ steps.script.updates.valid }}
+        id: timestamp
+        run: echo ::set-output name=value::$(date +%s)
 
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        if: ${{ steps.script.updates.valid }}
+        with:
+          commit-message: "feat(font): auto-update font from remote cdn"
+          title: "feat(font): auto-update font from remote cdn ${{ steps.timestamp.outputs.value }}"
+          body: |
+            - check for font updates
+          branch: check-for-font-updates-${{ steps.timestamp.outputs.value }}
+		 
