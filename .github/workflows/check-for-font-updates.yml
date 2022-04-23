@@ -18,8 +18,7 @@ jobs:
         with:
           node-version: '12'
           
-      - run: npm install
-	  
+      - run: npm install	  
       - name: Check for font updates
         id: updates
         run: npm run check-for-font-updates && echo ::set-output name=valid::1 || true
@@ -38,4 +37,3 @@ jobs:
           body: |
             - check for font updates
           branch: check-for-font-updates-${{ steps.timestamp.outputs.value }}
-		 
